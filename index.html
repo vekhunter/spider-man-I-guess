@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flick Picks - Accessible Movie Reviews</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Flick Picks</h1>
+  </header>
+  <nav aria-label="Main menu">
+    <ul class="main-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <main id="main-content" role="main">
+    <section id="movie-list" aria-label="Movie Reviews">
+      <article class="movie">
+        <img src="https://wddbyui.github.io/wdd131/images/spiderman.png" alt="Poster for Spider-Man: Into the Spider-Verse showing Miles Morales swinging through the city at sunset">
+        <div class="movie-details">
+          <h2 class="movie-title">Spider-Man: Into the Spider-Verse</h2>
+          <p class="release"><strong>Release Date:</strong> Dec 14, 2018</p>
+          <p class="age"><strong>Recommended Age:</strong> 10+</p>
+          <p class="genre"><strong>Genre:</strong> Action/Adventure</p>
+          <p class="rating"><strong>Rating:</strong> <span role="img" aria-label="5 out of 5 stars">⭐⭐⭐⭐⭐</span></p>
+        </div>
+        <p class="description">Miles Morales becomes the Spider-Man of his reality and crosses paths with others from the multiverse.</p>
+      </article>
+      <article class="movie">
+        <img src="https://wddbyui.github.io/wdd131/images/heaven.png" alt="Poster for The Other Side of Heaven showing a young couple and missionaries in a row boat on the ocean">
+        <div class="movie-details">
+          <h2 class="movie-title">The Other Side of Heaven</h2>
+          <p class="release"><strong>Release Date:</strong> December 14, 2001</p>
+          <p class="age"><strong>Recommended Age:</strong> 10+</p>
+          <p class="genre"><strong>Genre:</strong> Drama/Religious</p>
+          <p class="rating"><strong>Rating:</strong> <span role="img" aria-label="4 out of 5 stars">⭐⭐⭐⭐</span></p>
+        </div>
+        <p class="description">Based on the true story of Elder John H. Groberg, a missionary in Tonga in the 1950s, this film tells a powerful story of faith, hardship, and miracles.</p>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; Flick Picks</p>
+  </footer>
+</body>
+</html>

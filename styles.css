@@ -1,0 +1,149 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  background-color: #f5f5f5;
+  color: #222;
+}
+header {
+  padding: 1.5rem 1rem 1rem 1rem;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+}
+nav {
+  background-color: #222;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav li {
+  border-top: none;
+  display: block;
+}
+nav a {
+  display: block;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: #ffc107;
+  background-color: transparent;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+nav a:hover,
+nav a:focus {
+  background-color: #111;
+  color: #fff;
+}
+main {
+  padding: 1rem;
+}
+article {
+  background-color: #fff;
+  margin: 2rem auto 1.5rem auto;
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  max-width: 500px;
+}
+article img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+}
+.movie-details {
+  margin-bottom: 0.75rem;
+}
+.movie-title {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #b30059;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: right;
+}
+.release, .age, .genre, .rating {
+  margin: 0.2rem 0;
+  text-align: right;
+}
+.rating {
+  font-size: 1.2rem;
+}
+.description {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #222;
+}
+footer {
+  background-color: #222;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+@media (min-width: 600px) {
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  nav li {
+    border-top: none;
+    border-right: 1px solid #444;
+    display: block;
+  }
+  nav li:last-child {
+    border-right: none;
+  }
+  article {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    column-gap: 2rem;
+    align-items: start;
+    max-width: 700px;
+    min-height: 320px;
+    padding: 2rem 2.5rem 2rem 2.5rem;
+  }
+  article img {
+    grid-row: 1 / 7;
+    grid-column: 1 / 2;
+    margin-bottom: 0;
+    width: 210px;
+    height: auto;
+    object-fit: cover;
+  }
+  .movie-details {
+    grid-row: 1 / 6;
+    grid-column: 2 / 3;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  .movie-title {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    text-align: right;
+  }
+  .release, .age, .genre, .rating {
+    text-align: right;
+    margin-bottom: 0.3rem;
+  }
+  .description {
+    grid-row: 6 / 7;
+    grid-column: 2 / 3;
+    margin-top: 1.2rem;
+    font-size: 1.05rem;
+    color: #222;
+  }
+}
